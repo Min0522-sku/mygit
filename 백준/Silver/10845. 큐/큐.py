@@ -9,8 +9,7 @@ for i in range(N): ## N 번만큼 반복 그만큼 명령어 받기 위해서
         queue.append(int(cmd[1])) 
     elif cmd[0] == "pop":  
         if len(queue) != 0: 
-            print(queue[0])
-            del queue[0]
+            print(queue.pop(0))
         else:
             print('-1')
     elif cmd[0] == "size":
